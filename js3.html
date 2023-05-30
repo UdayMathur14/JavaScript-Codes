@@ -1,0 +1,28 @@
+<!-- hme yeh pta lg gya h ki direct kisi text ko change kaise krna h  , hm am hm change kreneg but button ki madat se  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- java scipt likne ke liye hme id deni zaruri ha  -->
+    <p id="text"> hello world </p>
+    <button id= "mybutton"> change text </button>
+    <script>
+//    document.getElementById("mybutton").innerHTML = "hello uday";
+// yeh galat h kyuki yeh hota h direct krne ke liye but hm toh button p click krke change krne waale the , button p click kra toh kuch hua hi nhi. 
+// toh hm use krenge .onclick 
+
+document.getElementById("mybutton").onclick = function(){
+  
+    document.getElementById("text").innerHTML = "hello sheety ";
+}
+// iska mtb h ki my button p jaao , usko clcik kro then ek function chalega jo ki paragraph ko select krega and usme jo likha hua h usko change kr dega 
+
+// button p click krne ke baad hello world sheety m badal gya , toh yeh iss line of code se hua h , onclik likhne ke baad function banaya and then uske ander chnage kiya 
+    </script>
+</body>
+</html>

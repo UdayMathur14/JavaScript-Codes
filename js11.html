@@ -1,0 +1,26 @@
+<!-- hmne bs alert m kuch print kra but ab hme apne page p wo jo alert aa rha tha wo ab likhna ha -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="sey"></div>
+
+    <script>
+        var string ="";
+        var tweets = ["hi ", "sheety " , "man"];
+        for(var i = 0 ; i<tweets.length ; i++)
+        {
+            string = string  + "<p>" + tweets[i] +"</p>";
+        }
+        // string ke ander kuch tha nhi toh hmne uske ander ek paragrah ke ander tweets[i]
+        // daal diya and baaki bhi saare tweets daal diye paragraph h toh wo apne aap hi ender bhi ho jaata h and last m sey ko change kr diya and uske ander strings daal diya .
+
+        document.getElementById("sey").innerHTML = string;
+    </script>
+</body>
+</html>
