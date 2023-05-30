@@ -11,15 +11,37 @@ let arr = [
 
 // Age of all the ladies
 
+//Try 1 
+// let as = arr.filter(function(n){
+//        if(n.gender=='F'){
+//               return n.age;      
+//        }
+//        else{
+//               return false;
+//        }
+// })
 
-let ladiesArr = arr.filter(function(obj){
-     return obj.gender=='F'
+// let ad = as.map(function(n){
+//        return n.age
+// })
+
+// console.log(ad)
+
+
+// Try 2 
+
+let as = arr.filter(function(n){
+       if(n.gender=='F'){
+              return n.age;      
+       }
+       else{
+              return false;
+       }
 }).map(function(n){
        return n.age
 })
 
-
-console.log(ladiesArr)
+console.log(as)
 
 
 
