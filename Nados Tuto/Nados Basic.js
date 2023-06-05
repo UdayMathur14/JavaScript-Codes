@@ -76,3 +76,6 @@ console.log(c)
 
 // a = 'pepcoding' // No Reassigning in const
 // console.log(a)
+
+
+// var is not good for blocked scope that is the final answer 
