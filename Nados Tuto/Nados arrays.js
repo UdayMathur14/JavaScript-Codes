@@ -8,17 +8,17 @@ arr = [1 , 2, 3, 4 , 'pepcoding' , true , 12.3 , 'a']
 
 // Array is just an indexed collection of Elements in JS
 // Access Value from an Array
-let test = arr[4]
-let test2 = arr[6]
-console.log(test)
-console.log(test2)
+// let test = arr[4]
+// let test2 = arr[6]
+// console.log(test)
+// console.log(test2)
 
 
 //Change any value of an array
 
-arr[3] = 'changed element'
+// arr[3] = 'changed element'
 
-console.log(arr)
+// console.log(arr)
 
 
 // Array Methods -
@@ -44,7 +44,14 @@ console.log(arr)
 
 // arr.shift()
 // console.log(arr)
+arr[0] = 10 
+arr[100] = 90;
+// array size becomes 100 and the middle elements shows undefined 
+arr[11] = null;
 
+for(let a = 0 ; a<arr.length ; a++){
+    console.log("elemeent at index ",a , arr[a]);
+}
 
 
 

@@ -55,10 +55,11 @@
 
 
 function test(a , b){
-  return "sum is " ,  (a+b)
+  return "sum is " + (a+b)
 }
 
 
-let addtion = test(4 , 5)
+let addtion = test(41 , 5)
 
 console.log(addtion)
+console.log(typeof(addtion))
