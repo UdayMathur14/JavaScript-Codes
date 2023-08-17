@@ -1,7 +1,7 @@
 // strings 
 let str = "hello ";
 console.log(str);
-// can be write string in "" or ' ' if you write on single then dont use rajat's or anything like that in between '' single quotes this will give you errer
+// can be write string in "" or ' ' if you write on single then dont use rajat's or anything like that in between '' single quotes this will give you error
 
 let p = "my name is javed \n prasad";
 console.log(p);
@@ -22,12 +22,12 @@ console.log(p.indexOf(key));
 console.log(p.indexOf('a'));  // it gives value 4 
 console.log(p.indexOf('a' , 5 ) );  // maine yha bola ki 5 index ke baad se a ko dhundhan start kr toh isne phir 12 diya mereko , yeh optional hota h isme 
 
-// if you wnat to write "my name is uday in string ";
+// if you want to write "my name is uday in string ";
 let ss = '"my name is uday in string "';
 console.log(ss);
 // it run properly 
 
-// if you want to write same sentence in "double qutoe " , then 
+// if you want to write same sentence in "double quote " , then 
 //hmko \ ka istemaal krna padega 
     let as = "\"my name is uday in string \"";
     console.log(as);
@@ -40,7 +40,7 @@ is paro
 `
 console.log(bb);
 
-// thes are called string little dont worry abut "" or' or \n , aap jaiso bhi likhoge iske ander waise hr print ho jayega
+// thes are called string little dont worry abut "" or' or \n , aap jaiso bhi likhoge iske ander waise hi print ho jayega
 
 
 let name= "uday ";

@@ -1,6 +1,6 @@
 // answer in the context of c++ /java
 
-// what does the keyword this mean ? and what does it refer to ?
+// what does the keyword this mean and what does it refer to ?
 
 // ans = point the current instance of the class , you can write only this when you create a class , inside it you can use it 
 // you cant use it outside the class , static method m nhi likh skte 
