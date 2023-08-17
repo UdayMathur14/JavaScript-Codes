@@ -1,45 +1,39 @@
 <!-- if statement  -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <p>what is the magic word?</p>
-    <p><input type="text" id="magic" placeholder="write your name"></p> 
-    <p><button id="1"> enter </button></p>
+    <p><input type="text" id="magic" placeholder="write your name" /></p>
+    <p><button id="1">enter</button></p>
 
-    
     <script>
-        // var x = 1;
-        // if(x==1)
-        // {
-        //     alert("hi babay ");
-        // }
-        // else{
-        //     alert(" x is 2 ");
-        // }
+      // var x = 1;
+      // if(x==1)
+      // {
+      //     alert("hi babay ");
+      // }
+      // else{
+      //     alert(" x is 2 ");
+      // }
 
-        document.getElementById("1").onclick =function(){
+      document.getElementById("1").onclick = function () {
+        var magicword = document.getElementById("magic").value;
 
-         var magicword = document.getElementById("magic").value;
+        var magic = "sheety";
 
-         var magic = "sheety";
-
-         if(magicword==magic)
-         {
-            alert("you got it baby ");
-
-         }
-         else{
-             alert("try again baby ");
-             document.getElementById("magic").innerHTML="";
-
-         }
+        if (magicword == magic) {
+          alert("you got it baby ");
+        } else {
+          alert("try again baby ");
+          document.getElementById("magic").innerHTML = "";
         }
+      };
     </script>
-</body>
+  </body>
 </html>

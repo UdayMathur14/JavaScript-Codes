@@ -8,24 +8,22 @@
   </head>
   <body>
     <p>how many fingers i am holding up ?</p>
-    <input type="text" id="guess">
+    <input type="text" id="guess" />
     <button id="check">try</button>
 
     <script>
       document.getElementById("check").onclick = function () {
-
         var ra = Math.floor(Math.random() * 6);
+        alert(ra);
 
-        
-        if(document.getElementById("guess").value==ra) {
+        var check = document.getElementById("guess").value;
+        alert(check);
+        if (check==ra) {
           alert("well done");
-        } 
-        else {
-          alert("nope the no was " + randomno);
+        } else {
+          alert("wrong ");
         }
-      }
-      
+      };
     </script>
-
   </body>
 </html>
