@@ -1,7 +1,7 @@
 // string is a sequence of Characters
 
 
-let str = 'pepcoder'
+let str = 'udayMathur'
 
 
 //length of String
@@ -13,16 +13,17 @@ let str = 'pepcoder'
 // 1.slice
 
 //slice(start)
-
+// third index se start h ja and eight index tk ja , 8 ko mt le 
 // let slicedStr =  str.slice(3 , 8)
-
+// // yMath is the answer 
 // console.log(slicedStr)
+
 
 
 // 2 . substr
 
 // subStr (startIdx , length)
-
+// start index is included 
 // let subString = str.substr(3 , 4)
 
 // console.log(subString)

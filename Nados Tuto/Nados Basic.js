@@ -31,31 +31,36 @@
 
 
 
-// var is function Scoped and let is Block Scoped
+// var is function Scoped 
 
-function test(){
-       var a = 2
-       console.log(a) // 2
-}
-test() // fuction invokation
-console.log(a) // this is not allowed 
+// function test(){
+//        var a = 2
+//        console.log(a) // 2
+// }
+// test() // fuction invokation
+// console.log(a) // this is not allowed 
 
-
+// var ko use kr rhe h iss me toh wo print kr rha h jbki nhi krna chahiye tha 
 // if(true){
 //     var b = 4
 //     console.log(b) // 4  
 // }
 
 
-// console.log(b) // downside of using var 
+// console.log(b) // downside of using var - disadvantage 
 // Solution - use let to avoid scope of var
 
-// if(true){
-//        let c = 'pep'
-//        console.log(c)
-// } // this is block
 
-// console.log(c)
+
+
+
+if(true){
+       let c = 'pep'
+       console.log(c)
+} // this is block
+
+console.log(c)
+// throwing error which is good 
 
 
 
@@ -71,3 +76,6 @@ console.log(a) // this is not allowed
 
 // a = 'pepcoding' // No Reassigning in const
 // console.log(a)
+
+
+// var is not good for blocked scope that is the final answer 
