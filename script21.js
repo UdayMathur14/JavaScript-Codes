@@ -14,7 +14,7 @@ arr.push("rishabh");
 // this will push the element at the end of the array 
 
 console.log(arr.indexOf("risabh"));
-// give the index of the rishabh if prsent in the array else give -1
+// give the index of the rishabh if present in the array else give -1
 
 arr.shift();
 // remove the first element of the array 

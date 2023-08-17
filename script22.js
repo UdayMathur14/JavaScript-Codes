@@ -15,7 +15,7 @@ var bird = {
     x : 100 ,
     y :20 , 
     color: "blue",
-    eggs :[1,2,3,4],
+    eggs :[999,2,3,4],
 
     //    fly is the variable , we dont see this in output unless we call this particular function 
     fly:function(){
@@ -28,27 +28,26 @@ var bird = {
 // if you want to access the certain property of the bird then
 console.log(bird.x);
 
-// you can also updte this 
+// you can also update this 
 bird.x = 120 ; 
 
 console.log(bird.eggs);
 // to see the array of the bird.eggs 
 
-//alternate methid to see the array of the birds which is the eggs and we go till it lenght 
+//alternate method to see the array of the birds which is the eggs and we go till it lengh
 for(let i = 0 ; i<bird.eggs.length ; i++){
     console.log(bird.eggs[i]);
 }
 
 // another method 
 // this function will get automaticaly a index and its value 
-bird.eggs.forEach(function(idx , val){
+bird.eggs.forEach(function(val , idx){
     console.log(idx, val);
 });
 
-// it will print the index and val but yeh bs value hi print kr rha h index nhi pta nhi kyu 
+// it will print the index and val 
 
 bird.fly();
-// yeh bhi value nhi preint kr rhi bs bird is flyhi likh rhi ha 
 
 
 
