@@ -43,7 +43,7 @@ cp.execSync('start chrome')
 // dekhiya kaise 
 
 
-console.log("output" + cp.execSync('fi.exe'))
+console.log("output" + cp.execSync('try.txt'))
 // aise krke aap dusri file ko bhi run kr skte ho 
 
 // buffer basically means give output in binary 
