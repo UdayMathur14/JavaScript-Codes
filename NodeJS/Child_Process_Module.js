@@ -14,7 +14,7 @@ const cp = require('child_process')
 
 // console.log('Open Calculator')
 
-// cp.execSync('calc')
+ cp.execSync('calc')
 // aap calc command prompt p likhoge tb bhi calculator khul jayega 
 // yeh execsyn method kya karega same jaise cmd m likha tha toh calcultor khula tha toh same yeh calculator ko call krega and calculator khul jayega .
 
@@ -27,7 +27,7 @@ const cp = require('child_process')
 // aapko sbse phele browser open krna h 
 // google karoge toh yeh saari commang mil jayegi 
 console.log("start chrome")
-//cp.execSync('start chrome')
+cp.execSync('start chrome')
 
 // but agr aapko kisi website p jaan h toh kya kroge ?
 // toh simple process h start chrome ke ander jao and start chrome ke baad direct link paste krdo 
@@ -43,7 +43,7 @@ console.log("start chrome")
 // dekhiya kaise 
 
 
-console.log("output  " + cp.execSync('node 18_strings.js'))
-// aise krke aap dusri fil ko bhi run kr skte ho 
+console.log("output" + cp.execSync('fi.exe'))
+// aise krke aap dusri file ko bhi run kr skte ho 
 
 // buffer basically means give output in binary 
