@@ -13,13 +13,13 @@
 //map will process every value and will apply the instruction that is inside the callback function
 //map returns a new array
 
-// let arr = [2, 5, 9, 10, 11];
+let arr = [2, 5, 9, 10, 11];
 
-// let squaredArr = arr.map(function (n) {
-//   return n * n;
-// });
+let squaredArr = arr.map(function (n) {
+  return n * n;
+});
 
-// console.log(squaredArr);
+console.log(squaredArr);
 
 // let nameArr = ["Aniket Raj", "Nayan Jha", "Prashant Pandey"];
 
