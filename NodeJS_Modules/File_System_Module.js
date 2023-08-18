@@ -140,4 +140,10 @@ console.log('Data of File => ' + content)
 // fs.unlinkSync(srcFilePath)
 //to delete the file after copy in another folder
 
+console.log(__dirname) 
+//current directory 
+
+console.log(__filename)
+//current file
+
 
