@@ -7,7 +7,7 @@ const path = require('path')
 
 //1 . File ko read Kaise Karey (Reading A file)
 
-let content = fs.readFileSync('./NodeJS_Modules.try.txt')
+let content = fs.readFileSync('./NodeJS_Modules/try.txt')
 console.log('Data of File => ' + content)
 // i am file 1 data h 23_01 ,  m likha hua h 
 // direct isko content doge yeh buffer m de dega ouput , so hm isko string ke saath +operator ka use krke likheneg
