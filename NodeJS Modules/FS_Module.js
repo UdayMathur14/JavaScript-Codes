@@ -7,33 +7,33 @@ const path = require('path')
 
 //1 . File ko read Kaise Karey (Reading A file)
 
-let content = fs.readFileSync('try.txt')
+let content = fs.readFileSync('f1.txt');
 
 //console.log(content) // Gives content in buffer means binary format
 
-console.log('Data of File => ' + content)
+console.log('Data of File => ' + content);
 // my name is uday mathur is present in try.txt ,  m likha hua h 
 // direct isko content doge yeh buffer m de dega output , so hm isko string ke saath + operator ka use krke likheneg
 
-// agr aapko string ke saath concat means + operator nhi lagana h toh phir aapko yeh krna padega , bina string ke saath conct kre bhi output aa rha h aise 
+// // agr aapko string ke saath concat means + operator nhi lagana h toh phir aapko yeh krna padega , bina string ke saath conct kre bhi output aa rha h aise 
 
-console.log(content.toString())
+// console.log(content.toString())
 
 
-// 2 . writing into a file
-// writeFileSync
+// // 2 . writing into a file
+// // writeFileSync
 
-// 2 chize deni h ki konsi file m write krna h , aur kya write likhan h 
+// // 2 chize deni h ki konsi file m write krna h , aur kya write likhan h 
 
-fs.writeFileSync('try.txt' , "hello uday sheety")
-fs.writeFileSync('try.txt' , " apna kaam kr na lawde")
+// fs.writeFileSync('try.txt' , "hello uday sheety")
+// fs.writeFileSync('try.txt' , " apna kaam kr na lawde")
 
-let c = fs.readFileSync("try.txt")
-console.log(c.toString())
+// let c = fs.readFileSync("try.txt")
+// console.log(c.toString())
 
-// toh hmne dekha ki uss file m jaake yeh save kr dega 
+// // toh hmne dekha ki uss file m jaake yeh save kr dega 
 
-fs.writeFileSync("f3.txt", "This data will be written to f3");
+// fs.writeFileSync("f3.txt", "This data will be written to f3");
 // but aisi toh koi file banai nhi maine f3.txt naam se toh phir kya hoga , toh yeh method kya krta h ki yeh ek nyi file bna dega and then usme yeh data store kra dega
 // // if the file name that is passed doesn't not exists a new file will be created with its
 // //name and the data will be written on that file 
@@ -73,9 +73,9 @@ fs.writeFileSync("f3.txt", "This data will be written to f3");
 
 //mkdirSync = method = make directory 
 
-fs.mkdirSync('myDirectory2')  // kis naam se deirectory chahiye wo likh do 
-// jb maine yeh banaya toh ek nyi directory bn gyi mydirectory 2 ke naam se 
-console.log('Directory Created')
+// fs.mkdirSync('myDirectory2')  // kis naam se deirectory chahiye wo likh do 
+// // jb maine yeh banaya toh ek nyi directory bn gyi mydirectory 2 ke naam se 
+// console.log('Directory Created')
 
 // agr isko dobara chalau toh kya run krega 
 // ans h nhi kyuki kya ek hi dirctory m 2 same naam se folder bn skte h toh nhi bn skte isliye yeh dobara run nhi krega , error de dega ki file already exits
@@ -125,22 +125,22 @@ console.log('Directory Created')
 // Copying a file from one dir to another dir
 // ek file ko hme copy krna h ek folder se dusre folder m 
 
-let srcFilePath = 'D:\\Batches\\FJP-8\\3_NodeJS\\nodePackages\\myDirectory2\\f1.txt'
+// let srcFilePath = 'D:\\Batches\\FJP-8\\3_NodeJS\\nodePackages\\myDirectory2\\f1.txt'
 
-let destinationFolderPath = 'D:\\Batches\\FJP-8\\2_JavaScript\\'
-
-
-let toBeCopiedFileBaseName = path.basename(srcFilePath)
-
-console.log(toBeCopiedFileBaseName) // f1.txt
-
-let destPathComplete = path.join(destinationFolderPath , toBeCopiedFileBaseName)
-console.log(destPathComplete)
+// let destinationFolderPath = 'D:\\Batches\\FJP-8\\2_JavaScript\\'
 
 
-fs.copyFileSync(srcFilePath , destPathComplete )
-console.log('File Copied')
+// let toBeCopiedFileBaseName = path.basename(srcFilePath)
 
-fs.unlinkSync(srcFilePath)
+// console.log(toBeCopiedFileBaseName) // f1.txt
+
+// let destPathComplete = path.join(destinationFolderPath , toBeCopiedFileBaseName)
+// console.log(destPathComplete)
+
+
+// fs.copyFileSync(srcFilePath , destPathComplete )
+// console.log('File Copied')
+
+// fs.unlinkSync(srcFilePath)
 
 
