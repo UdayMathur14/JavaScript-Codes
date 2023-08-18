@@ -34,10 +34,11 @@
 // var is function Scoped 
 
 // function test(){
-//        var a = 2
+//        let a = 2
 //        console.log(a) // 2
 // }
-// test() // fuction invokation
+//console.log(a);// let badiya h na function ke bhaar print kr rha h na hi block ke bhaar 
+//test() // fuction invokation
 // console.log(a) // this is not allowed 
 
 // var ko use kr rhe h iss me toh wo print kr rha h jbki nhi krna chahiye tha 
@@ -46,7 +47,7 @@
 //     console.log(b) // 4  
 // }
 
-
+//means var function ke liye toh theek h but block ke liye nhi kyuki block ke bhaar print ho rha h var  
 // console.log(b) // downside of using var - disadvantage 
 // Solution - use let to avoid scope of var
 
@@ -54,12 +55,12 @@
 
 
 
-if(true){
-       let c = 'pep'
-       console.log(c)
-} // this is block
+// if(true){
+//        let c = 'pep'
+//        console.log(c)
+// } // this is block
 
-console.log(c)
+// console.log(c)
 // throwing error which is good 
 
 
