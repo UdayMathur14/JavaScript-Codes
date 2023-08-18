@@ -7,7 +7,7 @@ const path = require('path')
 
 //1 . File ko read Kaise Karey (Reading A file)
 
-let content = fs.readFileSync('f1.txt');
+let content = fs.readFileSync('./NodeJS/file.txt');
 
 //console.log(content) // Gives content in buffer means binary format
 
