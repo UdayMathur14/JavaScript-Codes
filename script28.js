@@ -16,15 +16,15 @@ console.log(typeof Number);
 console.log(typeof Object);
 console.log(typeof Function);
 
-// these all are the function whcih creates these types of datatypes 
+// these all are the function which creates these types of datatypes 
 
-// hmne it datatypes ko capital m likha hua h 
-// sbko type aay h function 
+// hmne in datatypes ko capital m likha hua h 
+// sbko type aaya h function 
 
 // means
 console.log(Boolean(0));
 console.log(Boolean(3));
-// iske ander koi string call kru toh true ayega agr ko ipositive no call kru tb bhi true ayega , it function is cast anything to boolena 
+// iske ander koi string call kru toh true ayega agr koi positive no call kru tb bhi true ayega , it function is cast anything to boolean 
 console.log(Number("2323"));
 // isko normal no m convert kr dega 
 

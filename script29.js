@@ -1,7 +1,7 @@
 // classes in javascript 
 // syntactical sugar with a programming language to make things easier to read or to express .
 
-// a constructor is called a syntaic sugar , it can be removed freom the language 
+// a constructor is called a syntaic sugar , it can be removed from the language 
 
 class Persons {
     constructor(name , age)
