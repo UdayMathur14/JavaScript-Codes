@@ -29,20 +29,18 @@
 // multipication(4 , 5)
 
 
-
-// function as expressions
-
 // function sayhi(){
 //     console.log('Hi Pepcoders')
 // } // function Defination
 
 
-// function Expression
-// let sayHi = function(){
-//        console.log('Hi')
+//function Expression
+// let sayHi = function(a,b){
+//        console.log('Hi');
+//        console.log(a+b);
 // }
+// sayHi(3,2);
 
-// sayHi()
 
 // IIFE (Immediately Invoked Function expresion)
 
@@ -52,14 +50,20 @@
 // }(20 , 10))
 
 
+// function test(a , b){
+//   return "sum is " + (a+b)
+// return ko ek variable m store krana padega isliye return use kr rhe h 
+// }
 
 
-function test(a , b){
-  return "sum is " + (a+b)
-}
+// let addtion = test(41 , 5)
+
+// console.log(addtion)
+// console.log(typeof(addtion))
 
 
-let addtion = test(41 , 5)
 
-console.log(addtion)
-console.log(typeof(addtion))
+// function stry(a, b){
+//   console.log('answer' + a-b)
+// }
+//yeh nhi chl rha kyuki yha + ke ander wo a-b ko number m change krna cha rha hoga but nhi kr pa rha hoga isliye NAN dikha rha h means not a number toh + ki jagah , lagao toh chl jayega 
