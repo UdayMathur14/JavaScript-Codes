@@ -138,5 +138,6 @@ console.log('Data of File => ' + content)
 // console.log('File Copied')
 
 // fs.unlinkSync(srcFilePath)
+//to delete the file after copy in another folder
 
 
