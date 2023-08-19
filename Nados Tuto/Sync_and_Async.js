@@ -19,7 +19,7 @@ const fs = require("fs");
 
 console.log("Before");
 
-fs.readFile("./JS Concepts/f3.txt", cb1);
+fs.readFile("./Nados Tuto/f1.txt", cb1);
 //iss file ko read krne ki koshish krega and then cb1 ko call kr dega , aur data ayega toh data ke ander pass kr dega 
 
 function cb1(err, data) {
@@ -31,7 +31,7 @@ function cb1(err, data) {
   }
 }
 
-fs.readFile("f2.txt", cb2);
+fs.readFile("./Nados Tuto/f2.txt", cb2);
 
 function cb2(err, data) {
   if (err) {
@@ -42,7 +42,7 @@ function cb2(err, data) {
   }
 }
 
-fs.readFile("f3.txt", cb3);
+fs.readFile("./Nados Tuto/f3.txt", cb3);
 
 function cb3(err, data) {
   if (err) {
@@ -53,3 +53,9 @@ function cb3(err, data) {
 }
 
 console.log("After");
+//Yeh Async chl rhi h means alag alag kbhi f2 , f1 , f3 
+//toh kbhi f3 , f2 , f1 and randomly change ho rha h 
+
+// Why ?
+//Ans : 
+// 1) call stack = area jha p aaka javascript ka har ek function execute hone ke liye jaata h , phele aaya console.log("befor") , ye gya call stack ke ander dekha ki yeh ko sync h toh isko direct hi print kr diya and remove kr diya call stack se 
