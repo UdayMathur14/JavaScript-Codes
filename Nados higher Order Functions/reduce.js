@@ -10,8 +10,8 @@
 // console.log(sum)
 
 
-let sumOfArray = arr.reduce(function(acc , value){
-       let uptadedSum = acc + value
+let sumOfArray = arr.reduce(function(sum , value){
+       let uptadedSum = sum + value
        return uptadedSum
 } , 0)
 

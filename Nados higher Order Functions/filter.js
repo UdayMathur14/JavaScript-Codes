@@ -1,7 +1,7 @@
 // Filter----->
 // * Filter returns a new array containing array elements that matches a specified condition
 // if the condition stands true it will filter out those elements and will presemt them in a new Array
-
+//we have to use condition in filter array 
 
 let arr = [2 , 4, 5, ,7 ,8 , 10 , 13]
 

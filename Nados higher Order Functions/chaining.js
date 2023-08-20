@@ -12,14 +12,14 @@ let arr = [
 // Age of all the ladies
 
 //Try 1 
-let as = arr.filter(function(n){
-       if(n.gender=='F'){
-              return n.age;      
-       }
-       else{
-              return false;
-       }
-})
+// let as = arr.filter(function(n){
+//        if(n.gender=='F'){
+//               return n.age;      
+//        }
+//        else{
+//               return false;
+//        }
+// }) 
 
 // let ad = as.map(function(n){
 //        return n.age
@@ -30,16 +30,16 @@ let as = arr.filter(function(n){
 
 // Try 2 
 
-// let as = arr.filter(function(n){
-//        if(n.gender=='F'){
-//               return n.age;      
-//        }
-//        else{
-//               return false;
-//        }
-// }).map(function(n){
-//        return n.age
-// })
+let as = arr.filter(function(n){
+       if(n.gender=='F'){
+              return n.age;      
+       }
+       else{
+              return false;
+       }
+}).map(function(n){
+       return n.age
+})
 
  console.log(as)
 
