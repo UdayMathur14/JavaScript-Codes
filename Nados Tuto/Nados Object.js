@@ -1,12 +1,16 @@
  // Objects - in JS an object is a collection data in key value pair
 
-//  let person = {
-//         name : 'Mrinal',
-//         age: 23,
-//         gender : 'Male'
-
+ let person = {
+        name : 'Mrinal',
+        age: 23,
+        gender : 'Male'
+ }
 
 //  } // declaration
+console.log(person.gender);
+console.log(person['gender']);
+//2 types of calling in objects
+
 
 //  let car={
 //         model : 'BMW',
