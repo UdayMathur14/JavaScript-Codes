@@ -29,9 +29,14 @@
 
         if (magicword == magic) {
           alert("you got it baby ");
+          var c = document.createElement("div");
+          c.innerHTML = document.getElementById("magic").value;
+          let bodyElem = document.querySelector("body");
+          bodyElem.appendChild(c);
+
         } else {
           alert("try again baby ");
-          document.getElementById("magic").innerHTML = "";
+          document.getElementById("magic").value = "";
         }
       };
     </script>
