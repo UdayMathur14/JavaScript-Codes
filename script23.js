@@ -40,7 +40,7 @@ is paro
 `
 console.log(bb);
 
-// thes are called string little dont worry abut "" or' or \n , aap jaiso bhi likhoge iske ander waise hi print ho jayega
+// these are called string little dont worry abut "" or' or \n , aap jaiso bhi likhoge iske ander waise hi print ho jayega
 
 
 let name= "uday ";

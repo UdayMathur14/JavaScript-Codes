@@ -7,7 +7,7 @@ console.log(1==='1');
 // why the first one gives true and the other one is false 
 // some point we get it that may be == and === does not have the same meaning itself , data type can be converted so that they become same 
 
-// == check whether the data on the both sides are equal , or it check that they can be converted to any type so they they become equal 
+// == check whether the data on the both sides are equal , or it check that they can be converted to any type so that they become equal 
 
 // but === this check whether the data and the datatype of both the sides are equal if equal then it print true otherwise false 
 
