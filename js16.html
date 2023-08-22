@@ -21,16 +21,15 @@
     <script>
       document.getElementById("shape").onclick = function () {
         //alert("start");
-        var start = new Date().getHours();
+        var start = new Date().getSeconds();
         
         document.getElementById("shape").style.display = "none";
 
-        var end = new Date().getHours();
+        var end = new Date().getSeconds();
 
-        var timeTaken = (end - start) / 1000;
+        var timeTaken = (end - start);
 
         document.getElementById("uday").innerHTML = timeTaken;
-        alert("uu");
       };
     </script>
   </body>

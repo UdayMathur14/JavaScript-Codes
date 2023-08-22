@@ -7,7 +7,7 @@ var d = 7; // we use var when it has a function scope
 function fun() {
   let a = 5;
   if (a == 5) {
-     f = 10;
+     let f = 10;
     console.log("inside", f);
     //  yeh wala toh let print ho gya but neeche wala outside wale m error aa gya
     // ki let ek block scope h means ek block ek ander hi rahega and wo block tha if condition
@@ -29,7 +29,6 @@ fun();
 // }
 
 // fun();
-
 // var kr diya toh ab chl rha h
 
 
