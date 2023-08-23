@@ -1,3 +1,6 @@
+// yeh wo function hote h jinko hm dusre function ke saath operate kra skte h , yeh dusre function ka as a callback leta h and then apna operation shuru krta h .
+
+
 // Higher order functions are functions that operate on other functions,
 // either by taking them as arguments or by returning them.
 
