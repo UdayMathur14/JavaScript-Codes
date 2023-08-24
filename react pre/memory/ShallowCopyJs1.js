@@ -54,7 +54,7 @@ console.log(f);
 
 
 
-
+//normal function 
 function greet(){
        console.log('Hello')
 }
@@ -63,6 +63,7 @@ function greet(){
 greet()
 
 
+// arrow function , greeting is the argument , bs arrow ka use kiya h 
 let wish =(greeting)=>{
        console.log(greeting)
 }

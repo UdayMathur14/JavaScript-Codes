@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+<!-- abhi tk pde function component , ab krenge class based  -->
+    <script type="text/babel">
+
+      // yeh abhi ek class h but isko component m change kr ha hu ,
+      // react.component ek pre define class h , yeh component ki saari prop hold kr ke rakti h , hmne class ko inherit krwa diya component se 
+
+      // class Counter extends React.Component{
+      //   constructor(){
+      //     super();//yeh super sb kuch le ayega react component se 
+      //   }
+      // }
+
+      // this is a class component
+
+      // state = kisi chi cheez ki current position 
+
+
+
+      class Counter extends React.Component {
+        constructor() {
+          super(); 
+
+          // har ek component k ek hi state bnta h , ek object ki trah bnta h kyuki aur bhi values aa skti h 
+          this.state = {
+            count: 0,
+          };
+        }
+
+        // arrow function - normal function nhi c , let ki need nhi h , inc rement function k naam
+        increment = ()=>{
+             this.setState({
+              count : this.state.count+1
+             })
+
+            //  count : this.state.count+1 direct aise nhi likh skte , toh iske liye setstate call krte h , phir jo aapko change kra h woh likhoge, setstate aapki state ko utha ke le ayega  
+        }
+
+        decrement = ()=>{
+             this.setState({
+              count : this.state.count-1
+             })
+        }
+
+
+        render() {
+          return (
+            <>
+              <h1>{this.state.count}</h1>
+              <button onClick={this.increment}>+</button>
+              <button onClick={this.decrement}>-</button>
+            </>
+          );
+        }
+      }
+
+
+      ReactDOM.render(<Counter/> , document.getElementById('root'))
+    </script>
+  </body>
+</html>
