@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <!--2 upar wale yeh aapke 2 react ke cdn waale link h , jo react ki saari functionalities jha laake add kr dega   -->
+
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- this is the beble script which is used to convert jsx into html so it can be read by browser and in the the website -->
+  </head>
+  <body>
+
+    <!-- react based code started -->
+    <div id="root">
+   
+    </div>
+
+    <script type="text/babel">
+
+      // according to dom , js 
+      // let ele = document.createElement('h1')
+      // ele.innerText = 'Hello'
+
+      // let root = document.getElementById('root')
+
+      // root.appendChild(ele)
+
+      //by using react same thing in React
+
+      // let ele = React.createElement('h1' , {
+      //        children : 'Hello'
+      //        childern:['hi' , 'sheety']  agr to teen element add krne ho
+      // })
+      // yeh sb create ho gya h but page p kuch dikh nhi rha toh dikhane ke liye hm neeche wala use krenge , usse khete h rander method 
+
+      // ReactDOM.render(ele , document.getElementById('root'))
+      // konsa element append krana h (ele), kha  append karana h (root)  
+
+
+      // but aise likhenge toh badiya nhi h complex ho jayega toh iske liye toh unhone socha ki kyu na JSX(javascript xml notation ) ko integrate kr liya   , so we can write html and js code together .
+
+      // Jsx = it is  away of writing html and js together , aapne abhi tk hmtl ke liye alag file banai and js ke liye alag.
+
+      // React ke ander 2 component hoote h 🧮 
+      // 1 - class based component 
+      // 2 - functional based components 
+
+
+      // function based component ,
+
+
+      // componenet means = ek seprate box maan skte ho , jiska dusre se koi lena dena nhi h uske ander aur components ho skte h but aur kisi dusre m link nhi hoga generally.
+      
+      // React Rules:
+        // 1 - react rule - componenet name of first letter should be capital .
+        // 2 - yeh js and html  = jsx h but browser render nhi kr pa rha usse kyuki wo html ko smjhta h nut jsx ko nhi ,  toh uske liye ek transpiler h means jo jsx ko html m convert kr deta h .and then browser pd leta h . 
+
+        // transpiler name is beble toh beble ko use krne ke liye script ko batana padega ki beble use kr rhe h toh script type/beble and beble ko bhi llana padega toh uske liye ek script add kr di gyi h head m .
+
+        // 3 - agr ek component 1 se jyada child ko lena chahta h toh wo aise direct nhi likh skta usko div ke ander hi likhan padega toh yeh bhi ek react ka rule h . , single chl jayega but mulpile agr same componenet m return krana chahte ho like parent m toh usko div m hi daalna padega , aur bhi kisi child m agr ek se jyada lik 4 h1 tag h toh wo bhi div ke ander hi jayenge 
+
+        // compoenets have some properties called as props
+
+
+
+      // child1 ek componenet h , yeh jo child1 h iski 3v property honi chanhiye name , age , marks , props ko {} m dete h , aise dete h , yeh colour wagera nhi h na hi object h bs yeh sb htm m jaa rha h . aur kuch nhi h yeh 
+      function Child1({name , age , marks}) {
+        return (
+          // isme function javascript h aur div and h1 are html toh yeh h jsx,
+          // aap isme loops and function define nhi kr skte , Higher order function use kr skte h 
+          <div>
+            <h1> Hello My name is {name} </h1>
+            <h4> Age is {age} </h4>
+            <h4> Total Marks Obtained- {marks} </h4>
+
+          </div>
+        );
+      }
+
+      // by default prop property , but neeche se ayegi toh wo override ho jayegi
+      function Child2({color='black'}) {
+        return (
+          <div>
+            <h1> I saw a {color} cat </h1>
+          </div>
+        );
+      }
+
+      // ek parent component h , iske ander hme child ko add krna h toh khali return ke ander <Child1/> likhnege toh yeh uss compnent ko add kr lega and agr tumhe chalana h toh ReactDOM.render(<Parent/>, document.getElementById("root")); likh ke hla skte ho .
+
+      function Parent() {
+        //div ya toh aise bhi likh skte ho component ke case m
+        return (
+           <>  
+            <Child1 name='Mrinal' age='20' marks='75' />
+            <Child1 name='Aman' age='21' marks='80' />
+            <Child2 color='White'/>
+          </>
+        );
+      }
+
+      ReactDOM.render(<Parent />, document.getElementById("root"));
+//konsa element show krna h screen p and ur p jaake isko add krwanan h and parent ke ander 2 componenet h toh wo print ho jayenge
+   
+    </script>
+  </body>
+</html>
