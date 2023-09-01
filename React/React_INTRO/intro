@@ -36,3 +36,12 @@ toh react aapko fast application build kr ke de deta h
 so this is the first reason beacuse of loding time and speed 
 
 so yeh of of the reasons h baaki aur bhi h. 
+
+react by default strict mode m rheti h , aap change kr skte ho .
+
+Always make components in capital letter first
+
+1 -st method in termianl for crearing app is : npx create-react-app todo(name);
+
+2 - npm start
+
