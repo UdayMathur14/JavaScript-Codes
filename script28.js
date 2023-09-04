@@ -19,7 +19,7 @@ console.log(typeof Function);
 // these all are the function which creates these types of datatypes 
 
 // hmne in datatypes ko capital m likha hua h 
-// sbko type aaya h function 
+// sbka type function aaya h  
 
 // means
 console.log(Boolean(0));

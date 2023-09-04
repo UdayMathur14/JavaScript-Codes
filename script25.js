@@ -3,7 +3,7 @@
 // what does the keyword this mean and what does it refer to ?
 
 // ans = point the current instance of the class , you can write only this when you create a class , inside it you can use it 
-// you cant use it outside the class , static method m nhi likh skte 
+// you can't use it outside the class , static method m nhi likh skte 
 
 // object making , : se value dete h key ko 
 let a = {
