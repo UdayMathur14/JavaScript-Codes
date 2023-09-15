@@ -14,11 +14,12 @@
 
 
    <!-- like inner text = <h1> hi sir</h1> -->
-
     <script>
+   let currentFontSize = 50; 
         document.getElementById("mybutton").onclick = function(){
             document.getElementById("text").style.color = "red";
-            document.getElementById("text").style.fontSize = "50px";
+            currentFontSize += 50;
+            document.getElementById("text").style.fontSize = currentFontSize +"px" ;
         }
     </script>
 
