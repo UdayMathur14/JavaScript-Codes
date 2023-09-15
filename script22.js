@@ -1,6 +1,10 @@
-// javascript object notation 
+// javascript object notation :
+// JavaScript object syntax. It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page
+
+// Property:
 // one of way creating javascript JSON = javascript object notation 
 // allows to create objects without defining the class 
+
 // if you make a game and there is a bird and the bird has the certain properties in it 
 // standing at some coordinates x , y 
 // it has certain width and hieght 

@@ -12,7 +12,7 @@ function square_root(n){
 
 // this way is called function hoisting 
 
- var sqrt = function(){
+var sqrt = function(){
     console.log("hi");
     return ;
  }

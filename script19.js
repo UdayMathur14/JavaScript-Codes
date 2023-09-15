@@ -1,7 +1,7 @@
 // we can declare variable like this in javascript
 c = 20; // it is a global variable declartiion
 var d = 7; // we use var when it has a function scope
-// let a = 10 ; // we use let  when we have a block scope
+// let a = 10 ; // we use let when we have a block scope
 // console.log(a);
 
 function fun() {
@@ -10,7 +10,7 @@ function fun() {
      let f = 10;
     console.log("inside", f);
     //  yeh wala toh let print ho gya but neeche wala outside wale m error aa gya
-    // ki let ek block scope h means ek block ek ander hi rahega and wo block tha if condition
+    // ki let ek block scope h means ek block ek ander hi rahega and wo block tha (if condition)
   }
   console.log("outside ", f);
   //  jaise hi yeh let ko bola ki bhaar print hoja wo nhi ho paya
@@ -29,7 +29,7 @@ fun();
 // }
 
 // fun();
-// var kr diya toh ab chl rha h
+// var kr diya toh ab chl rha h block scope p
 
 
 
