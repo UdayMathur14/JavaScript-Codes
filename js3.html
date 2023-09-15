@@ -15,14 +15,19 @@
 //    document.getElementById("mybutton").innerHTML = "hello uday";
 // yeh galat h kyuki yeh hota h direct krne ke liye but hm toh button p click krke change krne waale the , button p click kra toh kuch hua hi nhi. 
 // toh hm use krenge .onclick 
-
+var c = 1; 
 document.getElementById("mybutton").onclick = function(){
-  
     document.getElementById("text").innerHTML = "hello sheety ";
+    alert(c);
+    if(c%2==1){
+        document.getElementById("text").innerHTML = "odd number ";
+    }
+    else{
+        document.getElementById("text").innerHTML = "even number ";
+    }
+    c++;
 }
 // iska mtb h ki my button p jaao , usko click kro then ek function chalega jo ki paragraph ko select krega and usme jo likha hua h usko change kr dega 
-
-// button p click krne ke baad hello world sheety m badal gya , toh yeh iss line of code se hua h , onclik likhne ke baad function banaya and then uske ander change kiya 
     </script>
 </body>
 </html>
