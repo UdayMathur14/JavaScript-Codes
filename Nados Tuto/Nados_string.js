@@ -12,7 +12,7 @@ let str = 'udayMathur'
 
 // 1.slice
 
-//slice(start)
+//slice(startidx , Endidx+1)
 // third index se start h ja and eight index tk ja , 8 ko mt le 
 // let slicedStr =  str.slice(3 , 8)
 // // yMath is the answer 

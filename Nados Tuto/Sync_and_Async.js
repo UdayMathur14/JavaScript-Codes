@@ -15,11 +15,14 @@ const fs = require("fs");
 
 // console.log('After')
 // error first callback - jiske ander aap pheli priority error ko dete h 
+
+
+
 // Asynchronous way of reading Files
 
 // console.log("Before");
 
-// fs.readFile("./Nados Tuto/f1.txt", cb1);
+// fs.readFile("./f1.txt", cb1);
 // //iss file ko read krne ki koshish krega and then cb1 ko call kr dega , aur data ayega toh data ke ander pass kr dega 
 
 // function cb1(err, data) {
@@ -64,7 +67,7 @@ const fs = require("fs");
 
 // Hence : Before and after aa jayenge 
 
-// Node api stack random m 
+// Node api stack random m h
 
 // 3 - call back queue = nodep api quue se randomly yeh que ke ander chle jaynege 
 
@@ -75,48 +78,48 @@ const fs = require("fs");
 
 //But yaar yeh shi nhi h asnyc thode time ke liye random shi h but yeh bekaar h 
 
-// Asnyc= 1 -Randmness 
-//       //  2- serialwise - means aapke pass ek book h toh aapp yeh nhi chchte ki random pages aaye aap chchte hi ki serail m pages aye kyuki usski ka fayda h.
+// Asnyc= 1 -Randomness 
+//       //  2- serialwise - means aapke pass ek book h toh aapp yeh nhi chahte ki random pages aaye aap chahte hi ki serial m pages aye kyuki usski ka fayda h.
 
 // How to achive serial synchrous
 
-console.log("Before");
+// console.log("Before");
 
-fs.readFile("./Nados Tuto/f1.txt", cb1);
-//iss file ko read krne ki koshish krega and then cb1 ko call kr dega , aur data ayega toh data ke ander pass kr dega 
+// fs.readFile("./Nados Tuto/f1.txt", cb1);
+// //iss file ko read krne ki koshish krega and then cb1 ko call kr dega , aur data ayega toh data ke ander pass kr dega 
 
-function cb1(err, data) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log("This is file data-> " + data);
-    fs.readFile("./Nados Tuto/f2.txt", cb2);
-  }
-}
-//jb 1phela cal back function call ho toh uske baad hi dusra call back function call ho , 
-// jb phela over ho jayega uske baad hi dusra chlega and then theesra , so phele call back ke ander dusre ko call kr diya 
+// function cb1(err, data) {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log("This is file data-> " + data);
+//     fs.readFile("./Nados Tuto/f2.txt", cb2);
+//   }
+// }
+// //jb 1phela cal back function call ho toh uske baad hi dusra call back function call ho , 
+// // jb phela over ho jayega uske baad hi dusra chlega and then theesra , so phele call back ke ander dusre ko call kr diya 
 
-function cb2(err, data) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log("This is file data-> " + data);
-    fs.readFile("./Nados Tuto/f3.txt", cb3);
+// function cb2(err, data) {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log("This is file data-> " + data);
+//     fs.readFile("./Nados Tuto/f3.txt", cb3);
 
-  }
-}
+//   }
+// }
 
 
 
-function cb3(err, data) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log("This is file data-> " + data);
-  }
-}
+// function cb3(err, data) {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log("This is file data-> " + data);
+//   }
+// }
 
-console.log("After");
+// console.log("After");
 //your output will be 
 // Before
 // After
@@ -125,4 +128,4 @@ console.log("After");
 // This is file data-> I am f3
 
 
-//serial = serial ek order h , synchrouns and serial m farak h , serial ek order h aur sync means 1 ke baad ek 
+//serial = serial ek order h , synchrouns and serial m farak h , serial ek order h aur sync means 1 ke baad ek. 
