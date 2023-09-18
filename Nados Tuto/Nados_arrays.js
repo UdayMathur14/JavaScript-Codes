@@ -24,7 +24,7 @@ arr = [1 , 2, 3, 4 , 'pepcoding' , true , 12.3 , 'a']
 // Array Methods -
 
  // push method
- // push method adds an Element of your choice after the last elemet of array
+ // push method adds an Element of your choice after the last element of array
 
 //  arr.push('b')
 //  console.log(arr) // 
@@ -42,8 +42,9 @@ arr = [1 , 2, 3, 4 , 'pepcoding' , true , 12.3 , 'a']
 // arr.unshift('12000')
 // console.log(arr) // add element at the starting 
 
-// arr.shift()
+// arr.shift() // remove the first element
 // console.log(arr)
+
 arr[0] = 10 
 arr[100] = 90;
 // array size becomes 100 and the middle elements shows undefined 
