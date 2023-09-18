@@ -16,7 +16,7 @@ class Persons {
     }
     
 }
-
+console.log(Persons);
 let p1 = new Persons('john doe' , 32);
 console.log(p1.isadult());
 // gives true 
@@ -25,10 +25,12 @@ let p2 = new Persons('uday' , 12);
 console.log(p2.isadult());
 // gives false 
 // console.log(p);
-// so p ek object h jisska name h johndoe and uski age ha 32 
+// so p2 ek object h jisska name h johndoe and uski age ha 32 
+
 console.log(p1.isadult == p2.isadult);
 // gives true , means in dono ki defination ek hi jagah h and iska reference same ha 
-console.log(Persons);
+
+
 // it is a function jiska naam h persons 
 // note that there is no datatype called class 
 // when we make classes they are implement as function 

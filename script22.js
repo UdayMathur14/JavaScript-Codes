@@ -1,4 +1,4 @@
-// javascript object notation :
+// javascript object notation : JSON-
 // JavaScript object syntax. It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page
 
 // Property:
