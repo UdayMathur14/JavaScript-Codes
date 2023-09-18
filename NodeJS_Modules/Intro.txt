@@ -1,6 +1,6 @@
 MERN STACK = USES 4 TECHNOLOGY:
 1 - mongo db = no sql database
-2 = expres 
+2 = express
 3 = react 
 4 - node.js = it is a tool which helps to run javascript in the machine . 
 yeh sb kuch bni h = javascript ke upar bni h yeh sb 
