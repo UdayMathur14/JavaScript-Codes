@@ -22,18 +22,18 @@ Dom m bhoot saari chize aisi h jo ki problem khdi kr skti h frontent developmene
 1 - Naye elements ka addition ya aap khe lijiye updating the dom . Jha p fail ho jaata h.
 But kyu 
 
-Dom m aap ek project create kr rhe ho : aapke pass root h body h and then div tag bna diya apne yeh wo , ab bascially hoga kya agr aapko iss div ke ander ek aur element add krna h chahte ho wo p tag ho ya aur koi tag ho toh hota yeh h ki toh Puri ki puri dom wapas se bnti h . Wapas se ctrate aur load hoti h . 
+Dom m aap ek project create kr rhe ho : aapke pass root h body h and then div tag bna diya apne yeh wo , ab bascially hoga kya agr aapko iss div ke ander ek aur element add krna h chahte ho wo p tag ho ya aur koi tag ho toh hota yeh h ki toh Puri ki puri dom wapas se bnti h . Wapas se create aur load hoti h . 
 
 Suppose ek bdi application h aur aapne khi p ek node update ya add kiya h toh aap chahoge ki toh yeh puri dom wapas se load ho , common sense m hi nhi chahte ki ho, wo aapki aap ki performance slow kr dega , loading time bda dega , so 
 
 Iss chiiz ko solve krne ke liye facebook ne ek librarary utha ke de di uska naam h react .
 
-React = yeh khaas baat h jo react h it uses something known as virtual Dom . virtual dom aapke original dom ki copy hoti h . AB agr aapko kuch koi tag ya element add krna h toh wo aap virtual dom m change kr dega and then baad m virtual dome real dome se compare krega and wha p add kr dega jha p change hoga , toh loading time minimum ho jaati h .
+React = yeh khaas baat h jo react h it uses something known as virtual Dom . virtual dom aapke original dom ki copy hoti h . AB agr aapko kuch koi tag ya element add krna h toh wo aap virtual dom m change kr dega and then baad m virtual dom real dom se compare krega and wha p add kr dega jha p change hoga , toh loading time minimum ho jaati h .
 
 The process is called reconcillation yeh net se pd skte ho but need nhi h 
 toh react aapko fast application build kr ke de deta h 
 
-so this is the first reason beacuse of loding time and speed 
+so this is the first reason because of loding time and speed 
 
 so yeh of of the reasons h baaki aur bhi h. 
 
@@ -41,7 +41,7 @@ react by default strict mode m rheti h , aap change kr skte ho .
 
 Always make components in capital letter first
 
-1 -st method in termianl for crearing app is : npx create-react-app todo(name);
+1st Method in termianl for crearing app is : npx create-react-app todo(name);
 
 2 - npm start
 
