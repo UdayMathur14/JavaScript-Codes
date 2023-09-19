@@ -42,4 +42,4 @@ console.log(Person1);
 console.log(Teacher1);
 console.log(Student1);
 
-// name ko aage likho ki piche but name ke ander wohi jayrga jo bhejenge
+// name ko aage likho ki piche but name ke ander wohi jayega jo bhejenge
