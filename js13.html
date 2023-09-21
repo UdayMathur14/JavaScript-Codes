@@ -17,7 +17,7 @@
         var ra = Math.floor(Math.random() * 6);
         alert(ra);
 
-        var check = document.getElementById("guess").value;
+        var check = document.getElementById("guess").innerHTML;
         if (check==ra) {
           alert("YOUR LUCK IS LUCKY Today");
           document.getElementById("print").innerHTML = "You win ";
