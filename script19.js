@@ -4,6 +4,14 @@ c = 20; // it is a global variable declartion
 var d = 7; // var keyword works in function scope but not in block scope
 let a = 10; //Let keyword works in both Block scope and function scope
 
+// var is initialize undefined but let and const cannot be 
+// console.log(c);
+// var c ; //ok , shows undefined 
+
+// console.log(c);
+// let c ; //error
+
+
 // if(true){
 //   var disp = 5 ; 
 //   console.log("inside",disp);
