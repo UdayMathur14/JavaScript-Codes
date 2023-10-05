@@ -17,6 +17,8 @@ class Persons {
     
 }
 console.log(Persons);
+
+
 let p1 = new Persons('john doe' , 32);
 console.log(p1.isadult());
 // gives true 

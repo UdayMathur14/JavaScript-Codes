@@ -2,38 +2,42 @@
 c = 20; // it is a global variable declartion
 
 var d = 7; // var keyword works in function scope but not in block scope
-let a = 10 ; //Let keyword works in both Block scope and function scope
+let a = 10; //Let keyword works in both Block scope and function scope
+
+// if(true){
+//   var disp = 5 ; 
+//   console.log("inside",disp);
+// }
+
+// console.log("outside",disp);
+
+//isko bhaar print nhi krna chahiye tha but kr rha h tbhi bola jata h ki var block ke liye bekaar h but yha p let badiya kaam krega 
+
+
+
+// function fun() {
+//   let data = 5;
+//   console.log("abe" , data); 
+// }
+// fun();
+// console.log("abe" , data); 
+
+// neeche wala error de rha h iska mtb h ki let badiya kaam krta h block and function m 
+//yha p var bhi shi kaam karega 
 
 
 // function fun() {
 //   let a = 5;
 //   if (a == 5) {
-//      let f = 10;
-//     console.log("inside", f);//this is working fine
-
-//     // ki let ek block scope h means ek block ek ander hi rahega and wo block tha (if condition)
+//     var f = 10;
+//     console.log("inside", f);
 //   }
-//   console.log("outside ", f); //Not able to print 
 // }
-
-// function ko call bhi krna hota h
-
-
-function fun() {
-  let a = 5;
-  if (a == 5) {
-    var f = 10;
-    console.log(f);
-  }
-  console.log("neeche wala" , f); // yeh bhaar bhi aur ander bhi print ho rha h var iska mtb bekaar h work nhi kr rha 
-}
-
-fun();
-
 // fun();
-// var kr diya toh ab chl rha h block scope p iska mtb bekaar h var block m use krna 
+// console.log("outside ", f);
 
+//but abhi toh yeh error de rha h aur tumne jbki bola upar ki var toh function scoped h aur block ke ander nhi chlta shi but abhi chl rha h kyuki yeh block ek function ek ander h . smjhe .
 
-
-// if you write f = 1; 
+//extra info
+// if you write f = 1;
 // then it is a global variable and can run anywhere
