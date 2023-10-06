@@ -21,7 +21,7 @@ var bird = {
     color: "blue",
     eggs :[999,2,3,4],
 
-    //    fly is the variable , we dont see this in output unless we call this particular function 
+    //fly is the variable , we dont see this in output unless we call this particular function 
     fly:function(){
         console.log("bird is fly " , this.x , this.y);
     }
