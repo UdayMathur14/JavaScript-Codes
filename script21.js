@@ -37,3 +37,9 @@ else{
     console.log("padai kro baby");
 }
 
+const re = arr.length
+console.log(re) //give the length of the new array
+
+console.log(arr.toString()); //gives you the array instring
+
+arr.sort(); //phele string m convert krta h and then sort accroding to string alpha
