@@ -66,4 +66,4 @@
 // function stry(a, b){
 //   console.log('answer' + a-b)
 // }
-//yeh nhi chl rha kyuki yha + ke ander wo a-b ko number m change krna cha rha hoga but nhi kr pa rha hoga isliye NAN dikha rha h means not a number toh + ki jagah , lagao toh chl jayega 
+//yeh nhi chl rha kyuki yha + ke ander wo a-b ko number m change krna cha rha hoga but nhi kr pa rha hoga isliye NAN dikha rha h means not a number toh + ki jagah (,) lagao toh chl jayega 
