@@ -5,7 +5,7 @@ let arr= ["uday " , "anmol" , "meenu"];
 
 
 // console.log(arr[0]) ; 
-// access the 0th element of the array 
+// access the 0th element of the array  
 
 // console.log(arr.length) ; 
 // this will print the length of the array 
