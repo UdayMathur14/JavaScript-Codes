@@ -24,8 +24,12 @@ const fs = require("fs");
 // fs.readFile("./JS Tuto/f1.txt", cb1); This is working fine in debug console
 console.log("Before");
 
-fs.readFile("f1.txt", cb1);
-//iss file ko read krne ki koshish krega and then cb1 ko call kr dega , aur data ayega toh data ke ander pass kr dega 
+fs.readFile("./f1.txt", cb1);
+//iss file ko read krne ki koshish krega and then cb1 ko call kr dega , aur data ayega toh data ke ander pass kr dega .
+
+// data: This parameter will receive the contents of the "f1.txt" file as a buffer or a string if the reading operation is successful.
+
+// data: This parameter will receive the contents of the "f1.txt" file as a buffer or a string if the reading operation is successful.
 
 function cb1(err, data) {
   if (err) {
