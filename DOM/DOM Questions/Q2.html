@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
-      <li>6</li>
-      <li>8</li>
-      <li>9</li>
-      <li>10</li>
-    </ul>
 
-    <script>
-      // Fix the list by inserting the missing element using querySelectorAll and insertBefore
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
 
-      let list = document.querySelector("ul")
+<body>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+  </ul>
 
-      let allListItems = document.querySelectorAll('li') 
+  <script>
+    // Fix the list by inserting the missing element using querySelectorAll and insertBefore
 
-     let eightElem = allListItems[6]
+    let list = document.querySelector("ul")
 
-     let sevenElem = document.createElement('li')
+    // querySelector returns a single element, while querySelectorAll returns a NodeList containing multiple elements.
 
-     sevenElem.innerText = '7'
+    //Use getElementById when you have a unique id for an element and want to select that specific element. It's efficient for this specific use case.
 
-     list.insertBefore(sevenElem , eightElem)
+    // Use querySelector when you need to select elements based on more complex criteria and CSS-like selectors. It's versatile for selecting elements using a wide range of selectors.
 
 
-     
-    </script>
-  </body>
+
+    let allListItems = document.querySelectorAll('li')
+
+    let eightElem = allListItems[6]
+
+    let sevenElem = document.createElement('li')
+
+    sevenElem.innerText = '7'
+
+    list.insertBefore(sevenElem, eightElem)
+
+
+
+  </script>
+</body>
+
 </html>
