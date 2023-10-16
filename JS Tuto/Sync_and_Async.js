@@ -2,18 +2,18 @@ const fs = require("fs");
 
 //This is Synchronus way of reading Files
 
-// console.log('Before')
+ console.log('Before')
 
-// let data1 = fs.readFileSync('f1.txt')
-// let data2 = fs.readFileSync('f2.txt')
+let data1 = fs.readFileSync('./JS Tuto/f1.txt')
+let data2 = fs.readFileSync('./JS Tuto/f2.txt')
 
-// let data3 = fs.readFileSync('f3.txt')
+let data3 = fs.readFileSync('./JS Tuto/f3.txt')
 
-// console.log('This is file Data of file 1 ->  ' + data1)
-// console.log('This is file Data of file 2 ->  ' + data2)
-// console.log('This is file Data of file 3 ->  ' + data3)
+console.log('This is file Data of file 1 ->  ' + data1)
+console.log('This is file Data of file 2 ->  ' + data2)
+console.log('This is file Data of file 3 ->  ' + data3)
 
-// console.log('After')
+ console.log('After')
 // error first callback - jiske ander aap pheli priority error ko dete h 
 
 
@@ -71,7 +71,7 @@ const fs = require("fs");
 
 // 3 - call back queue = nodep api quue se randomly yeh que ke ander chle jaynege 
 
-4 //event loop = 1- our stack should be empty - means jitna bhi synchronous kaam h wo ho gya h 
+//4 //event loop = 1- our stack should be empty - means jitna bhi synchronous kaam h wo ho gya h 
 //  2- event loop one by one kisi ko bhi execute krta rahega and stack ke ander bhejte rahega 
 
 // Hence you get the random output in asynchronous 
