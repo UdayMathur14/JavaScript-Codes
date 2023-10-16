@@ -67,7 +67,7 @@ console.log("After");
 
 // Why ?
 //Ans : 
-// 1) call stack = area jha p aaka javascript ka har ek function execute hone ke liye jaata h , phele aaya console.log("befor") , ye gya call stack ke ander dekha ki yeh ko sync h toh isko direct hi print kr diya and remove kr diya call stack se 
+// 1) call stack = area jha p aaka javascript ka har ek function execute hone ke liye jaata h , phele aaya console.log("before") , ye gya call stack ke ander dekha ki yeh ko sync h toh isko direct hi print kr diya and remove kr diya call stack se 
 
 // 2 - Node Api stack m chle jayenge  = agr async hoga toh wo node api stack m and hold m baith gye then console after wala aaya toh wo bhi direct hi print ho gya :
 
@@ -84,7 +84,7 @@ console.log("After");
 
 //But yaar yeh shi nhi h asnyc thode time ke liye random shi h but yeh bekaar h 
 
-// Asnyc= 1 -Randomness 
+// Asnyc= 1 - Randomness 
 //       //  2- serialwise - means aapke pass ek book h toh aapp yeh nhi chahte ki random pages aaye aap chahte hi ki serial m pages aye kyuki usski ka fayda h.
 
 // How to achive serial synchrous
