@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: cyan;
+            border: 2px solid red;
+            padding: 20px;
+            margin: 10px 10px;
+            color: black;
+        }
+        .cute{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to the Javascript</h1> 
+    <div id="first" class="container">
+        <button id="clickMe">clickMe</button>
+    </div>
+    <div id="second" class="container">
+        <p>Hi My name is uday mathur </P>
+    </div>
+    <div id="third" class="container" class="cute">
+        <p>I am learning Javascript</P>
+    </div>
+    <script>
+        //Get the elemenet by Id
+        let c = document.getElementById("first");
+        c.style.backgroundColor ="black";
+
+        //get the elemenet by class 
+        let ele = document.getElementsByClassName("container");
+        ele[1].style.backgroundColor = "silver";
+        ele[2].style.backgroundColor = "green";
+        
+        //Same as upper with different query 
+        // let ele = document.querySelectorAll("container");
+        // ele[1].style.backgroundColor = "silver";
+        // ele[2].style.backgroundColor = "green";
+
+        //WANT TO add Another class by to make it more beautiful to a particular element
+        ele[1].classList.add("cute"); //text coloured change 
+        
+
+    </script>
+</body>
+
+</html>
