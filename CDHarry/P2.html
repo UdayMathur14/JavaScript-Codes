@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess number</title>
+</head>
+
+<body>
+    <h1>enter a number between 1 to 10 </h1>
+    <input type="text" name="" id="num">
+    <button onclick="go()"> check your luck </button>
+    <!-- <script>
+        var attempts = 10 ; 
+        var count = 0 
+        function go(){
+            if(count==attempts){
+                alert("your attempts are over , you lose ");
+                return;
+            }
+            var guess = Math.floor(Math.random() * 11);
+            alert(guess);
+            var check = document.getElementById('num').value;
+            if(guess==check){
+                alert("your guess is correct ");
+                return;
+            }
+            else if(check>guess){
+                alert("greater number");
+            }
+            else{
+                alert("smaller number");
+            }
+            count++;
+        }
+    </script> -->
+    <script>
+        async function pretendToBeAHacker() {
+            console.log("I am a hacker...");
+
+            await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulated delay
+
+            console.log("Your PC is hanged and hacked.");
+        }
+
+        pretendToBeAHacker();
+    </script>
+</body>
+
+</html>
