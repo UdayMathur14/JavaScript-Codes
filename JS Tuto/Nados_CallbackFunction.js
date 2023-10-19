@@ -15,7 +15,7 @@ function printLastName(lastName){
 function age(c){
   console.log(c);
 }
-//                 firstname , cb 
+
 printFirstName('Neeraj' , printLastName , age);
 //khaali ek hi function call kiya aur dusra bhi call ho gya apne aap hi cb m 
 

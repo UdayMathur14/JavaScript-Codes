@@ -5,7 +5,7 @@ let arr= ["uday " , "anmol" , "meenu"];
 
 
 // console.log(arr[0]) ; 
-// access the 0th element of the array 
+// access the 0th element of the array  
 
 // console.log(arr.length) ; 
 // this will print the length of the array 
@@ -37,3 +37,9 @@ else{
     console.log("padai kro baby");
 }
 
+const re = arr.length
+console.log(re) //give the length of the new array
+
+console.log(arr.toString()); //gives you the array instring
+
+arr.sort(); //phele string m convert krta h and then sort accroding to string alpha

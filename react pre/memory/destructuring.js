@@ -43,6 +43,9 @@ let obj2 = {
      };
 
 let {name} = obj2
+// console.log(name);
+// let {name}: This syntax is used to declare a variable named name and extract the value of the name property from the obj2 object.
+// = obj2: The value of the name property is taken from the obj2 object and assigned to the name variable.
 
 
 let {address : {country :cd}} = obj2

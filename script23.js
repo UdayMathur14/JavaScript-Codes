@@ -17,7 +17,7 @@ console.log(p.indexOf(key));
  
 
 // agr maan lo ki hme postion of a dekni hoti but jha p toh name m bhi a aa rha h and javed m bhi toh yeh kya dikhaega , yeh dikahge first instance of a 
-// but agr aap chahte h ki yeh dusre waale ka dikahi toh aap isko ek index pass kr skte h ki iss index se baad dekha shuru kre p m like thi s
+// but agr aap chahte h ki yeh dusre waale ka dikahi toh aap isko ek index pass kr skte h ki iss index se baad dekha shuru kre p m like this
 
 console.log(p.indexOf('a'));  // it gives value 4 
 console.log(p.indexOf('a' , 5 ) );  // maine yha bola ki 5 index ke baad se a ko dhundhan start kr toh isne phir 12 diya mereko , yeh optional hota h isme 

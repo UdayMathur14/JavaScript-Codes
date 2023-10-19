@@ -32,6 +32,7 @@ let str = 'udayMathur'
 //3 . Replacing part of String
 
 // replace(valueTobeReplaced , valueTobeReplacedWith)
+//replace only the first occuring string in the string 
 
 
 // let sayHello = 'Hello Nirnay'

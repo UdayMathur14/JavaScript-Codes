@@ -19,7 +19,7 @@ let a = 10; //Let keyword works in both Block scope and function scope
 
 // console.log("outside",disp);
 
-//isko bhaar print nhi krna chahiye tha but kr rha h tbhi bola jata h ki var block ke liye bekaar h but yha p let badiya kaam krega 
+//isko bhaar print nhi krna chahiye tha but kr rha h tbhi bola jata h ki var block ke liye bekaar h but yha p let badiya kaam krega kyuki le h block scope
 
 
 

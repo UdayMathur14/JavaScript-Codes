@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS TOPICS</title>
+    <style>
+        .container {
+            background-color: cyan;
+            border: 2px solid red;
+            padding: 20px;
+            margin: 10px 10px;
+            color: black;
+        }
+
+        .cute {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to the Javascript</h1>
+    <div id="first" class="container">
+        <button id="clickMe" onclick="go()"> clickMe</button>
+    </div>
+    <div id="second" class="container">
+        <p>Hi My name is uday mathur </P>
+    </div>
+    <div id="third" class="container" class="cute">
+        <p>I am learning Javascript</P>
+    </div>
+    <script>
+        //Get the elemenet by Id
+        let c = document.getElementById("first");
+        c.style.backgroundColor = "aqua";
+
+        //get the elemenet by class 
+        let ele = document.getElementsByClassName("container");
+        ele[1].style.backgroundColor = "silver";
+        ele[2].style.backgroundColor = "green";
+
+        //Same as upper with different query 
+        // let ele = document.querySelectorAll("container");
+        // ele[1].style.backgroundColor = "silver";
+        // ele[2].style.backgroundColor = "green";
+
+        //WANT TO add Another class by to make it more beautiful to a particular element
+        ele[1].classList.add("cute"); //text coloured change 
+
+        ele[1].classList.remove("cute") // remove the class hence color changed 
+
+        // console.log(ele[0].innerHTML); // tags + jo uske ander html likhi hui h 
+        // console.log(ele[0].innerText); //ab khaali tect hi milega 
+        // In summary, if you want to work with the text content of an element and avoid potential security risks associated with inserting HTML, you should use innerText. If you need to manipulate the HTML content, including HTML tags, use innerHTML
+
+        tn = document.getElementsByTagName('div'); // all the div tags 
+        //console.log(tn);
+
+        createdElement = document.createElement('p');
+        createdElement.innerText = "hello uday";
+        //tn[0].appendChild(createdElement); // add a child or any tag
+        //tn[0].removeChild(createdElement) //remove a child
+
+        createdElement2 = document.createElement('b');
+        createdElement2.innerText = "hello sheety";
+        //tn[0].replaceChild(createdElement2,createdElement); // replace a child
+
+
+        sel = document.querySelector('.container') //phela container class wala element de dega 
+        //console.log(sel);
+
+        sel = document.querySelectorAll('.container') // return a node list 
+        //console.log(sel);
+
+
+        // Events in js = events wo chize h jo ki ho rhi hoti h like click kiya , mouse ko leke gya khi pr .
+        // jaise hi click me agr click kre tb kuch ho 
+
+        // 2 tareeke h 
+        // 1- HTML P HI ONCLICK FUNCTION LGA DO 
+        // <button id="clickMe" onclick="go">clickMe</button>
+        function go() {
+            alert('button was clicked');
+            console.log('button is clicked ');
+        }
+
+        window.onload = function () {
+            console.log("document is loded ")
+        }
+        // 2 -direct access by id 
+
+        //mouse over means iske ander mouse aaya 
+        // first.addEventListener('mouseover',function(){
+        //    // alert('hover hua h ');
+        //     console.log('hover ander aaya h ')
+        //     alert('ander')
+        // })
+        // first.addEventListener('click',function(){
+        //     alert('click hua ');
+        //     console.log('click hua')
+        // })
+
+        //mouse bhaar gya isse 
+        // first.addEventListener('mouseout',function(){
+        //    // alert('hover hua h ');
+        //     console.log('mouse out hua h  ')
+        //     alert('bhaar')
+        // })
+
+        //mouse ko dabaya
+        // first.addEventListener('mouseup',function(){
+        //    // alert('hover hua h ');
+        //     console.log('mouse out hua h  ')
+        //     alert('bhaar')
+        // })
+
+        //mouse ko chora
+        // first.addEventListener('mousedown',function(){
+        //    // alert('hover hua h ');
+        //     console.log('mouse out hua h  ')
+        //     alert('bhaar')
+        // })
+
+        first.addEventListener('click', function () {
+            ri = document.querySelectorAll('.container')[1].innerHTML;
+            document.querySelectorAll('.container')[1].innerHTML = ri + "<b> we are bold</b>";
+            console.log('click hua')
+        })
+
+        // arrow function , same meaning 
+        function summ(a, b) {
+            return a + b;
+        }
+
+        sum = (a, b) => {
+            return a + b;
+        }
+
+        fun = () => {
+            console.log("I am your fun function");
+        }
+        //set timeout
+        setTimeout(fun, 5000);
+        //konsa function chlana chahte ho aur kitne mili second ke baad , console m yeh 5 sec ke baad dikha 
+
+        // setInterval(fun,2000);
+        //agr aap ek cheez ko baar baar repeated krana chahte ho , har 2second ke baad chlta rhega , abhi yeh normal chl rha h .
+
+        //clr = setInterval(fun,2000); // yeh ek id return karega , yeh use kra kyuki kbhi bhi hme zarurat pd jaaye toh yeh use kr o 
+        //clearTimeout(clr);
+        //toh yeh iss id ko bnd kr dega 
+
+
+
+
+        //local storage 
+        // data user ke computer m save krne mmadad krti h as a string 
+        // localStorage.setItem('name','harry');
+        // localStorage.getItem('name')
+        // localStorage.clear();
+
+        // Json = javscript object notation = open standard file format 
+        // uses to exchange the data 
+        //aap json ko string m convert krke ache se transport kr skte ho and then phir object m 
+
+        //javascipt object ka json se koi lena dena nhi h , bs aap convert kr rheho and "" m hi hona chahiye 
+        ex:
+        //javascript object
+        obj = {
+            name: "uday",
+            length: 1
+        }
+        jso = JSON.stringify(obj); //string  m convert kr rha h yeh 
+        console.log(jso);
+
+        par = JSON.parse(jso); //convert into object after converting into string 
+        console.log(par);
+
+        // EcmaScript = scripting standard , 9 ,6, 5 edition 
+
+        //Backtics || template literals
+        // a = 34 ; 
+        // console.log(`this is my ${a}`);
+
+    </script>
+</body>
+
+</html>
